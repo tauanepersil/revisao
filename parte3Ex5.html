@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*Ler o número de alunos existentes em uma turma e, após isto, ler as notas destes alunos,
+calcular e escrever a média aritmética dessas notas lidas*/
+
+            var totalAlunos = window.prompt('Digite o total de alunos');
+            var alunoAtual = 1;
+            var notaDoAluno = 0;
+            var somaDasNotas = 0;
+            var mediaDasNotas = 0;
+
+            while(alunoAtual <= totalAlunos){
+                notaDoAluno = parseFloat(window.prompt(`Digite a nota do aluno ${alunoAtual}`));
+                somaDasNotas = parseFloat(somaDasNotas + notaDoAluno)
+                mediaDasNotas = somaDasNotas / totalAlunos
+                alunoAtual++
+            }
+            console.log(`Média Aritmética: ${mediaDasNotas}`);
+
+    </script>
+</body>
+</html>

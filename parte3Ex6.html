@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/* Escreva um algoritmo para ler 10 números. Todos os números lidos com valor inferior a 40
+devem ser somados. Escreva o valor final da soma efetuada.*/
+
+       var numeroAtual = 0;
+       var somaDosNumeros = 0;
+
+       for(var contador = 1; contador <= 10; contador++){
+        numeroAtual = parseInt(window.prompt(` ${contador} - Digite um número:`)) 
+           if(numeroAtual < 40){
+               somaDosNumeros = somaDosNumeros + numeroAtual
+           }
+           
+       }
+
+        console.log(`Total da Soma doa números menos que 40: ${somaDosNumeros}`)
+
+    </script>
+</body>
+</html>
