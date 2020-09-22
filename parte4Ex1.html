@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*Escreva um algoritmo que leia 5 valores de temperatura em Celsius e armazene em um
+vetor. Seu exercício deve converter cada temperatura dessa e armazenar em outro
+vetor com os valores em farehneit. Você deve mostrar no resultados os dois vetores.*/
+
+        var grausCelsius = []
+        var grausFarehneit = []
+        var valorDigitado = ""
+        
+        for(var contador = 0; contador <= 4; contador++){
+           valorDigitado = parseFloat(window.prompt(`Digite em graus Celsius:`));
+            grausCelsius.push(valorDigitado)
+        }
+        
+        for(var posicao = 0; posicao <= 4; posicao++){
+            grausFarehneit.push((grausCelsius[posicao]*9/5) + 32);
+        }
+
+        console.log(grausCelsius);
+        console.log(grausFarehneit)
+
+
+
+    </script>
+</body>
+</html>

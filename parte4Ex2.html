@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+/*Escreva um algoritmo que permita a leitura dos nomes de 10 pessoas e armazene os
+nomes lidos em um vetor. Após isto, o algoritmo deve imprimir o nome da pessoa que
+tem o maior nome. Em caso de empate considere o último nome informado*/
+
+     var vetorNome = [];
+     var nomeDigitado = ""
+     var maiorNome = 0;
+     var maiorQuantLetras = 0;
+
+     for(var contador = 0; contador <= 9; contador++){
+         nomeDigitado = window.prompt(`Digite o nome:`);
+         vetorNome.push(nomeDigitado);
+     }
+
+     for(var contador = 0; contador <= 9; contador++){
+         if(vetorNome[contador].length > maiorNome){
+             maiorNome = vetorNome[contador].length
+         }
+     }
+
+     console.log(maiorNome)
+    
+ </script>   
+</body>
+</html>
+
