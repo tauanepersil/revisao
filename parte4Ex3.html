@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*Ler um vetor Q de 20 posições (aceitar somente números positivos). Escrever a seguir o
+valor do maior elemento de Q e a respectiva posição que ele ocupa no vetor*/
+
+    var vetorQ = []
+    var numeroDigitado = ""
+    var valorVetorQ = 0
+    var vetormaximo = 0
+
+        for (var contador = 0; contador <= 19; contador++) {
+            numeroDigitado = window.prompt(`escreva um número:`);
+            vetorQ.push(numeroDigitado);
+        }
+        for (var contador = 0; contador <= 19; contador++) {
+            if (vetorQ[contador] > valorVetorQ){
+            valorVetorQ = vetorQ[contador]
+             vetormaximo = contador
+        } 
+    }
+            console.log(valorVetorQ)
+            console.log(vetormaximo)
+
+
+    </script>
+</body>
+</html>
